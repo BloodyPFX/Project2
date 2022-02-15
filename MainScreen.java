@@ -62,8 +62,8 @@ public class MainScreen {
         Action.setBounds(172, 500, 132, 50);
         MS.add(Action);
         Action.addActionListener((e) ->{
-            munsey += 3;
-            main(null);
+            /*MS.dispose();
+            main(null);*/
         } );
 
         Rest = new JButton("Rest");
@@ -88,6 +88,7 @@ public class MainScreen {
 
         HP = new JLabel("Health");
         HP.setBounds(20, 340, 150, 30);
+        //HP.setText(String.valueOf(characterVariables.));
         MS.add(HP);
 
         SP = new JLabel("Stamina");

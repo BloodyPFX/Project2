@@ -114,9 +114,12 @@ public class RoleScreenGUI  {
 
 
         Barbbutton.addActionListener((e) -> {
+          MainScreen.add2Munsey(250);
           characterSelect.dispose();
           MainScreen.main(null);
           characterVariables.startupsetup("barbarian");
+          
+          
           //characterSelect.setVisible(false);
           
         });
@@ -165,6 +168,7 @@ public class RoleScreenGUI  {
         
 
         Magebutton.addActionListener((e) -> {
+          MainScreen.add2Munsey(300);
           characterSelect.dispose();
           MainScreen.main(null);
           characterVariables.startupsetup("mage");
@@ -179,6 +183,7 @@ public class RoleScreenGUI  {
         JPanel Rpanel = new JPanel();
         JButton Rougbutton = new JButton("Choose Rogue");
         Rougbutton.addActionListener((e) -> {
+          MainScreen.add2Munsey(300);
           characterSelect.dispose();
           MainScreen.main(null);
           

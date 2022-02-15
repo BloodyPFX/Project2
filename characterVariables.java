@@ -105,6 +105,9 @@ public class characterVariables {
             add2Inv(knife);
         }
         else if (type.equals("barbarian")){
+
+            
+
             weapons longsword = new weapons(30, 20, 20, 25, "longsword" );
             add2Inv(longsword);
             
@@ -172,7 +175,11 @@ public class characterVariables {
     //dieOfOverweight()
         //if they have too many things in inventory they DIE
         //if there are no inventory slots then they can't add more items to their inventory so they can't "die"
+        
 
-
-
+        public static void add2health (int y){
+            //health += y
+            
+            //characterVariables.;
+        }
 }
