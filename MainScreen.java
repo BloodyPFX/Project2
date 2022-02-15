@@ -18,7 +18,7 @@ public class MainScreen {
     JLabel SP; //stamina label
     Container con; //component that can contain other AWT components. it has many layers, with content pane being the one that holds the objects
 
-    private static int munsey = 0;
+    public static int munsey = 0;
     
     public void setMunsey(int x){
         munsey = x;
