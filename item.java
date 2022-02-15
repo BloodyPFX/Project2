@@ -6,7 +6,7 @@ public class item {
         this.name = name; this.cost = cost;
     }
 
-    //get and set shit
+    //gets and sets shit
     public int getCost(){return cost;}
     public String getName(){return name;}
 

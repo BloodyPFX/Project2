@@ -6,7 +6,7 @@ import java.awt.*;
 
 public class MainScreen {
     JFrame MS;
-    JButton Store; //button that opens the store
+    JButton Storet; //button that opens the store
     JButton Action; //opens actions menu
     JButton Rest; //rest
     JButton Inv; //opens inventory
@@ -35,7 +35,7 @@ public class MainScreen {
     MainScreen(){
         MS = new JFrame(); 
         Icon Enter = new ImageIcon("enter.png");
-        MS.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
 
         MS = new JFrame();
         MS.setSize(800,600);
@@ -44,20 +44,27 @@ public class MainScreen {
         MS.setVisible(true);
         MS.setResizable(false);
         MS.setExtendedState(Frame.NORMAL);
-        MS.getContentPane().setBackground(Color.black); //with this line, you are modifying an object with a method. according to the rule that concerns modifying objects
+        //MS.getContentPane().setBackground(Color.black); //with this line, you are modifying an object with a method. according to the rule that concerns modifying objects
         //with methods, the object will always be to the left side of the period, while your method will always be found on the right. in this case, our object is getContenPane, 
         //which retrieves the content pane so that you may add objects to it. setBackground would be our method; although technically we are not adding an object, we are
         //modifying the color of the pane itself.
         con = MS.getContentPane();
-        
+        MS.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
-        Store = new JButton("Shop");
-        Store.setBounds(20, 500, 132, 50);
-        MS.add(Store);
+        Storet = new JButton("Shop");
+        Storet.setBounds(20, 500, 132, 50);
+        MS.add(Storet);
+        Storet.addActionListener((e) ->{
+            Store.main(null);
+        } );
 
         Action = new JButton("Actions");
         Action.setBounds(172, 500, 132, 50);
         MS.add(Action);
+        Action.addActionListener((e) ->{
+            munsey += 3;
+            main(null);
+        } );
 
         Rest = new JButton("Rest");
         Rest.setBounds(324, 500, 132, 50);
@@ -79,12 +86,6 @@ public class MainScreen {
         Ent.setBounds(570, 430, 50, 50);
         MS.add(Ent);
 
-
-        Muns = new JLabel();
-        Muns.setBounds(20, 300, 150, 30);
-        Muns.setText("$" + String.valueOf(munsey));
-        MS.add(Muns);
-
         HP = new JLabel("Health");
         HP.setBounds(20, 340, 150, 30);
         MS.add(HP);
@@ -92,9 +93,13 @@ public class MainScreen {
         SP = new JLabel("Stamina");
         SP.setBounds(20, 380, 150, 30);
         MS.add(SP);
-        
+        MS.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        Muns = new JLabel();
         
+        Muns.setBounds(20, 300, 150, 30);
+        Muns.setText("$" + String.valueOf(munsey));
+        MS.add(Muns);        
 
     }
 
