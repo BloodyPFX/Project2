@@ -183,7 +183,7 @@ public class RoleScreenGUI  {
         JPanel Rpanel = new JPanel();
         JButton Rougbutton = new JButton("Choose Rogue");
         Rougbutton.addActionListener((e) -> {
-          MainScreen.add2Munsey(300);
+          MainScreen.add2Munsey(400);
           characterSelect.dispose();
           MainScreen.main(null);
           
