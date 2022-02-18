@@ -108,7 +108,7 @@ public class MainScreen {
     // main for testing purposes
     public static void main(String[] args) {
         new MainScreen();
-        
+        characterVariables.startupsetup(null);
         //playScreen.main(args);
         //playScreen seee = new playScreen();
 

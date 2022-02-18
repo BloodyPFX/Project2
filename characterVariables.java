@@ -19,7 +19,7 @@ public class characterVariables {
     private static ArrayList<item> inventory;
 
     //can't carry more than 20lbs
-    private static ArrayList<foods> foodInv;// = new ArrayList<String>();
+    public static ArrayList<foods> foodInv;// = new ArrayList<String>();
     private static ArrayList<weapons> weaponInv;// = new ArrayList<String>();
     //private ArrayList<weapons> weaponsInv; //backpack backpack
 
