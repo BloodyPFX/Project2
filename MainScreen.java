@@ -73,6 +73,9 @@ public class MainScreen {
         Inv = new JButton("Inventory");
         Inv.setBounds(476, 500, 132, 50);
         MS.add(Inv);
+        Inv.addActionListener((e) -> {
+            inventory.main(null);
+        });
 
         Comb = new JButton("Fight");
         Comb.setBounds(628, 500, 132, 50);

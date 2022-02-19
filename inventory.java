@@ -8,7 +8,7 @@ public class inventory {
 
 
         JLabel crispy = new JLabel();
-        crispy.setText(characterVariables.foodInv.toString());
+       // crispy.setText(characterVariables.foodInv.toString());
 
         JPanel crisp = new JPanel();
         
