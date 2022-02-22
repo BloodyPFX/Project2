@@ -6,9 +6,11 @@ public class inventory {
     public static void backpack(){
         JFrame screen = new JFrame();
 
+        printFoodInv();
+
 
         JLabel crispy = new JLabel();
-       // crispy.setText(characterVariables.foodInv.toString());
+        crispy.setText(characterVariables.foodInv.toString());
 
         JPanel crisp = new JPanel();
         

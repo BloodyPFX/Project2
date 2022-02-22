@@ -127,6 +127,15 @@ public class characterVariables {
         
     }
     
+        //FOODINVETORY PRINT OUT BULLSHIT
+    public static void printFoodInv(){
+        for(foods f: foodInv){
+            System.out.println(f.getName());
+        }
+    }
+
+
+
     public static void add2Inv(item i){
         inventory.add(i);
         if(i instanceof weapons){
